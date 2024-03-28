@@ -147,5 +147,186 @@
 
         
 // 5. Inheritance
+        Keyword extends is used to create inherit relationship between class
+        🟪 For inherit relationship child class can use parent class properties
 
+        class parent{
+            firstName="Arabia Al";
+            lastName="Anas";
+            getFullName(){
+                return (`This is ${this.firstName} ${this.lastName}`)
+            }
+        }
+        class child extends parent {
+
+        }
+
+        // var parent1= new parent();
+        // console.log(parent1.getFullName());
+        var child1= new child();
+        console.log(child1.getFullName());
+
+// 6. Overriding
+        🟪 Overriding works for inheritance relationship
+        🟪 When child class change his parent properties , that is overriding
+
+        class parent {
+            firstName="Arabia";
+            lastName="Anas";
+            getFullName(){
+                return (`This is ${this.firstName} ${this.lastName}`);   
+            }
+        }
+
+        class child extends parent {
+            firstName="Arabia Al";
+        }
+
+        let child1= new child();
+        console.log(child1.getFullName());
+
+
+        // let parent1= new parent();
+        // console.log(parent1.getFullName());
+  
+// 7. Inheritance Constructor
+        🟪 Constructor inside only parent class
+        🟪 Constructor inside only parent class pass parameters
+        🟪 Constructor inside only child class
+        🟪 Constructor inside only child class pass parameters
+        🟪 Constructor inside both parent & child class
+        🟪 Constructor inside both parent & child class pass parameters
+
+        class parent{
+            constructor(msg,a,b){
+                console.log("Iam a constructor of parent class");
+                console.log(msg+" "+(a+b));
+            }
+        }
+
+        class child extends parent{
+
+         constructor(msg,a,b){
+            super();
+            console.log(msg+" "+(a+b));
+            
+         }
+
+        }
+
+        const parent1=new parent();
+        const child1= new child("Iam a constructor of Parent class",10,10);
+
+//8. Inheritance Static Properties
+
+        🟪 When a class extends another, it inherits the parent class's static properties and methods
+
+        class parent {
+            static firstName="Arabia";
+            static lastName="Anas";
+        }
+        class child extends parent {
+            static firstName="Arabia Al";
+        }
+        console.log(parent.firstName);
+        console.log(parent.lastName);
+
+// 9. Method Overloading   
+
+// 10. Abstraction
+        🟪 Keyword "abstract" use for class abstraction
+        🟪 You can't create object for abstract class
+        🟪 Abstract class Always needs its inherited child class to perform
+        🟪 JavaScript does not have built-in support for abstract
+
+11. Polymorphism
+        🟪 The polymorphism is a core concept of an object-oriented paradigm
+        that provides a way to perform a single action in different forms.
+        🟪 We already know about Inheritance, Overriding, Overloading - those concepts together represent polymorphism
+
+// 12 Encapsulation
+
+            // * Encapsulation Using Closures *
+
+        function profile(){
+            let details="Profile Data";
+            return {
+                updated:function(){
+                    console.log("Profile Updated Proccess");
+                },
+                photoUpload:function(){
+                    console.log("Photo Uploaded Proccess");
+                },
+                login:function(){
+                    console.log("Login Proccess");
+                },
+                register:function(){
+                    console.log("Register Proccess");
+                },
+                reset:function(){
+                    console.log("Reset Proccess");
+                }
+            }
+        }
+        const profile1= new profile();
+        profile1.photoUpload();
+
+
+         // * Using Constructor Functions *
+
+
+        function Car(make, model) {
+            let mileage = 0;
+            this.getMake = function() {
+            return make;
+            };
+            this.getModel = function() {
+            return model;
+            };
+            this.getMileage = function() {
+            return mileage;
+            };
+            this.drive = function(distance) {
+            mileage += distance;
+            };
+            }
+            const myCar = new Car('Toyota', 'Corolla');
+            console.log(myCar.getMake()); // Output: Toyota
+
+
+
+         //   * Using ES6 Classes *
+
+        class bankAccount{
+        #balance=0;
+            diposite (amount){
+                this.#balance=this.#balance+amount;
+            }
+            widthrow(amount){
+                if (amount <=this.#balance){
+                    this.#balance-=amount;
+                } else {
+                    console.log("Insufficient Balance");
+                }
+            }
+            getBalance(){
+                return this.#balance;
+            }
+        }
+
+        const acc= new bankAccount();
+        acc.diposite(500);
+        acc.widthrow(270);
+        console.log(acc.getBalance());
+        console.log(acc.balance); // show undifined balance
 */
+
+
+
+
+
+
+
+
+
+
