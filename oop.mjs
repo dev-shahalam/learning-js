@@ -319,14 +319,33 @@
         acc.widthrow(270);
         console.log(acc.getBalance());
         console.log(acc.balance); // show undifined balance
+
+
+class bankAccount{
+    #balance=0;
+        diposite (amount){
+            this.#balance=this.#balance+amount;
+        }
+        widthrow(amount){
+            if (amount <=this.#balance){
+                this.#balance-=amount;
+            } else {
+                console.log("Insufficient Balance");
+            }
+        }
+        getBalance(){
+            return this.#balance;
+        }
+    }
+
+    const acc= new bankAccount();
+    acc.diposite(500);
+    acc.widthrow(270);
+    console.log(acc.getBalance());
+    // console.log(acc.balance); // show undifined balance
+
+// 42 es6 module export import
+export {bankAccount}
+export default bankAccount
+
 */
-
-
-
-
-
-
-
-
-
-
