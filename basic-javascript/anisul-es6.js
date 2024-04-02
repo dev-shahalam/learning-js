@@ -108,4 +108,64 @@ console.log(fullName, id);
 
         console.log(stdn(studentInfo));
 
+// Find 
+// Find Index
+
+
+// heigher order function and callback function 
+
+// Synchronously
+        const funOne=()=>{
+            console.log("My Task One");
+        }
+        const funTwo=()=>{
+            console.log("My Task Two");
+        }
+        const funThree=()=>{
+            setTimeout(function(){
+                console.log("My Task Three");
+            },3000)
+        }
+        const funFour=()=>{
+            console.log("My Task Four");
+        }
+        const funFive=()=>{
+            console.log("My Task Five");
+        }
+
+        funOne();
+        funTwo();
+        funThree();
+        funFour();
+        funFive();
+
+
+// Assynchronous
+
+        const funOne=(back)=>{
+            console.log("My Task One");
+            back();
+        }
+        const funTwo=(back)=>{
+            setTimeout(function(){
+                console.log("My Task Two");
+                back();
+            },3000)
+        }
+        const funThree=(back)=>{
+            setTimeout(()=>{
+                console.log("My Task Three");
+                back();
+            },3000) 
+        }
+        const funFour=()=>{
+            console.log("My Task Four");
+        }
+        funOne(()=>{
+            funTwo(()=>{
+                funThree(()=>{
+                    funFour();
+                });
+            });
+        });
 */
