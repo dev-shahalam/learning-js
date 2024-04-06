@@ -168,4 +168,19 @@ console.log(fullName, id);
                 });
             });
         });
+
+
+
+let len = document.querySelectorAll(".btn").length;
+let i = 0;
+
+for (i = 0; i < len; i++) {
+    document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+        var text = this.innerHTML;
+        document.querySelector("p").innerHTML = text + " Say Hello";
+    })
+}
+
+
+
 */
