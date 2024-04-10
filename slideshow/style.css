@@ -10,21 +10,38 @@ background-color: #0d171b;
 .slideshow{
     text-align: center;
     height: 100vh;
-    align-content: center;
+    /* align-content: center; */
 }
 .slideshow-element{
     color: blueviolet;
     font-size: 35px;
     position: absolute;
-    top: 50%;
+    align-content: center;
+    top: 0%;
     left: 0%;
     right: 0%;
+    bottom: 0%;
     transform: scale(0);
-    transition: 2000;
+    transition:0.5s;
 
+}
+
+.element1{
+    background-color: rgb(255, 60, 53);
+    height: inherit;
+}
+
+.element2{
+    background-color: rgb(236, 156, 50);
+    height: inherit;
+}
+
+.element3{
+    background-color: rgb(140, 197, 5);
+    height: inherit;
 }
 
 .slideshow-element.current{
     transform: scale(1);
-    transition: 2s;
+    transition: .5s;
 }
