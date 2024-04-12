@@ -7,14 +7,11 @@
 .posts-container {
     text-align: center;
     padding: 10px;
-
 }
 .posts{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
 }
 .post{
     width: 23%;

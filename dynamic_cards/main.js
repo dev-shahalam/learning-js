@@ -41,10 +41,7 @@ const dataList = [
     }
 ]
 
-
-
 const posts=document.querySelector(".posts");
-
 dataList.map((postData)=>{
 
 const post=document.createElement("div");
