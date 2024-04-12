@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+}
+
+.menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.body {
+    padding: 20px;
+    background-color: gold;
+    border-radius: 10PX;
+    margin-top: 15px;
+    line-height: 24px;
+}
