@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.container{
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-app{
+    background-color: #3333;
+    height: 70vh;
+    width: 50%;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.todo-app h1{
+    color: beige;
+    padding-bottom: 15px;
+}
+
+#input-value{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#todo-submit{
+    width: 28%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(8, 131, 253);
+    color:#fdfdfd;
+    font-size: 16px;
+}
+
+.todo-list{
+    margin-top: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.list-style{
+    text-align: start;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: ;
+}
+
+.show-msg-add{
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(3, 151, 70);
+    display: none;
+}
+
+.show-msg-del{
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(158, 19, 19);
+    display: none;
+}
+
+.show-msg-in{
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(173, 118, 0);
+    display: none;
+}
+#deleteButton{
+    color: red;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: none;
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
